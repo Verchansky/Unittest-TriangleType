@@ -96,12 +96,12 @@ class TestTypeTriangle(unittest.TestCase):
     #Проверка на существование треугольника
     def test_checkNumber(self):
         # Тестирование на корркетный ввод данных
-        self.assertTrue(Number1.checkNumber(1, 2, 3), True)
-        self.assertTrue(Number1.checkNumber(1, 3, 2), True)
-        self.assertTrue(Number1.checkNumber(3, 1, 2), True)
-        self.assertTrue(Number1.checkNumber(3, 2, 1), True)
-        self.assertTrue(Number1.checkNumber(2, 1, 3), True)
-        self.assertTrue(Number1.checkNumber(2, 3, 1), True)
+        self.assertTrue(Number1.checkNumber(3, 4, 5), True)
+        self.assertTrue(Number1.checkNumber(3, 5, 4), True)
+        self.assertTrue(Number1.checkNumber(5, 3, 4), True)
+        self.assertTrue(Number1.checkNumber(5, 4, 3), True)
+        self.assertTrue(Number1.checkNumber(4, 5, 3), True)
+        self.assertTrue(Number1.checkNumber(4, 3, 5), True)
 
         # Тестирование на некорректный ввод данных
         self.assertFalse(Number1.checkNumber(3, 1, 0), False)
